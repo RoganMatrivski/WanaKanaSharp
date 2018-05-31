@@ -179,7 +179,7 @@ namespace WanaKanaSharp
 
 				foreach (var child in root.Where((node) => !exceptions.Contains(node.Key)))
 				{
-					sokuon.Insert(child.Duplicate(true));
+					sokuon.Attach(child.Duplicate(true));
 				}
 
 				sokuon.TraverseChildren((node) =>
@@ -288,7 +288,7 @@ namespace WanaKanaSharp
 
 				foreach (var child in root.Where((node) => !exceptions.Contains(node.Key)))
 				{
-					sokuon.Insert(child.Duplicate(true));
+					sokuon.Attach(child.Duplicate(true));
 				}
 
 				sokuon.TraverseChildren((node) =>
